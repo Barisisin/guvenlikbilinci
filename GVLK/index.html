@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EĞİTİM SİSTEMİ</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f2f2f2, #ffffff); /* Hafif degrade arka plan */
+            color: #2F2F2F; /* Koyu gri yazı rengi */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* İçeriği yukarı hizala */
+            min-height: 100vh;
+            overflow-x: hidden; /* Yatay taşmayı engelle */
+        }
+
+        h1 {
+            color: #202020; /* Turuncu başlık rengi */
+            font-size: 3em; /* Büyük başlık */
+            margin-top: 0px; /* Üstten boşluk */
+            margin-bottom: 80px; /* Başlıktan sonra daha fazla boşluk */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+            letter-spacing: 2px; /* Harf aralığı */
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr; /* Tek sütun */
+            gap: 30px; /* Butonlar arası boşluk */
+            width: 40%; /* Butonların kapladığı alanın genişliği */
+            max-width: 800px; /* Maksimum genişlik */
+            margin-bottom:80px; /* Alt boşluk */
+        }
+
+        /* Her butona atanmış farklı arka plan rengi */
+        .button-link:nth-child(1) {
+            background-color: #2fbbb3; /* Turuncu */
+        }
+
+        .button-link:nth-child(2) {
+            background-color: #4b2fbb; /* Yeşil */
+        }
+
+        .button-link:nth-child(3) {
+            background-color: #cdc340; /* Mavi */
+        }
+
+
+        
+
+        .button-link {
+            color: #ffffff; /* Beyaz yazı rengi */
+            font-size: 1.4em; /* Büyük font boyutu */
+            font-weight: bold;
+            padding: 15px 30px; /* Buton içi boşluk */
+            border: none; /* Kenarlık yok */
+            border-radius: 10px; /* Yuvarlatılmış köşeler */
+            width: 100%; /* Tam genişlikte */
+            text-align: center; /* Metin ortalama */
+            cursor: pointer; /* Tıklanabilir işaretçi */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+            transition: background-color 0.4s, transform 0.3s, box-shadow 0.3s, color 0.3s;
+            text-decoration: none; /* Alt çizgi yok */
+            display: block; /* Butonu blok olarak göster */
+        }
+
+        /* Hover durumu için siyaha geçiş efekti */
+        .button-link:hover {
+            background-color: #333333; /* Hover ile siyah arka plan */
+            color: #ffffff; /* Beyaz yazı rengi */
+            transform: translateY(-5px); /* Hover yukarı kaldırma efekti */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Hover gölge efekti */
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .logo-container img {
+            width: 200px; /* Logonun genişliği */
+            height: auto; /* Oranlı yükseklik */
+        }
+
+        .logo-container2 {
+            margin-top: 15px;
+            margin-bottom: 1px;
+            text-align: center;
+        }
+         .logo-container2 img {
+            width: 400px; /* Logonun genişliği */
+            height: auto; /* Oranlı yükseklik */
+        }
+
+        .footer {
+            margin-top: 2px;
+            font-size: 0.9em;
+            color: #202020; /* Açık gri yazı rengi */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="ULogo.png" alt="ULS Airlines Logo">
+    </div>
+    <div class="logo-container2">
+        <img src="LogoGT.png" alt="Go Training Logo">
+    </div>
+    <h1>GÜVENLİK EĞİTİMLERİ</h1>
+    <div class="container">
+        <a href="GB/index.html" class="button-link">Güvenlik Bilinci Tazeleme Eğitimi</a>
+        <a href="KKG/index.html" class="button-link">Kokpit ve Kabin Güvenliği Tazeleme Eğitimi</a>
+        <a href="BGYS/index.html" class="button-link">Bilgi Güvenliği Yönetim Sistemi Tazeleme Eğitimi</a>
+
+ 
+    </div>
+    <div class="footer">
+        ULS Airlines 2024© 
+    </div>
+</body>
+</html>
